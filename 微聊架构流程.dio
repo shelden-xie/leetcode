@@ -1,0 +1,166 @@
+<mxfile host="65bd71144e">
+    <diagram id="iSdjUxlCSNdpjtj9UkNv" name="第 1 页">
+        <mxGraphModel dx="1128" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=left;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="690" width="680" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp; 三方服务层&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; &amp;nbsp; getstream&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#ffffff;strokeColor=#B09500;align=center;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="690" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="数据消息存储" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="710" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="消息分发" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="710" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="权限安全管理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="1150" y="710" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;websocket协议&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="710" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=left;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="820" width="680" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;server&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#ffffff;strokeColor=#B09500;fontSize=18;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="440" y="820" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="19" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="860" y="800" as="sourcePoint"/>
+                        <mxPoint x="900" y="750" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="19" target="4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1120" y="810" as="sourcePoint"/>
+                        <mxPoint x="1119.9999999999998" y="820" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;创建令牌token&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="840" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;权限绑定&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="840" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;生命周期管理&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="840" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;安全加密&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="1130" y="840" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=left;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="587" y="70" width="680" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;应用接口层&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3c800;fontColor=#ffffff;strokeColor=#B09500;align=center;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="70" width="120" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="shape=flexArrow;endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="28">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="927" y="690" as="sourcePoint"/>
+                        <mxPoint x="880" y="700" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="927" y="690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="token" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="1270" y="715" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="cookie时效性" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="1350" y="710" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="570" width="520" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="接口层" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;封装功能api&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+                    <mxGeometry x="755" y="580" width="195" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;获取token创建长链接&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+                    <mxGeometry x="980" y="580" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=14;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=#6F0000;targetPerimeterSpacing=1;jumpSize=9;strokeWidth=4;" edge="1" parent="1" source="19" target="54">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1270" y="620" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1320" y="840"/>
+                            <mxPoint x="1320" y="615"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=14;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=#6F0000;strokeWidth=4;" edge="1" parent="1" source="54" target="19">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1400" y="860" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1360" y="585"/>
+                            <mxPoint x="1360" y="880"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="UI层" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="190" width="120" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="190" width="510" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeWidth=4;fontSize=14;targetPerimeterSpacing=1;jumpSize=9;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="820" y="420" as="sourcePoint"/>
+                        <mxPoint x="870" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="" style="shape=flexArrow;endArrow=classic;html=1;strokeWidth=4;fontSize=14;targetPerimeterSpacing=1;jumpSize=9;entryX=0.5;entryY=1;entryDx=0;entryDy=0;width=3.75;endSize=3.4625;endWidth=4.0625;" edge="1" parent="1" target="58">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="985" y="570" as="sourcePoint"/>
+                        <mxPoint x="1030" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="220" width="310" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+                    <mxGeometry x="1100" y="220" width="120" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&lt;font color=&quot;#000000&quot;&gt;三方组件库&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="1110" y="240" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="公共头尾组件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#040101;" vertex="1" parent="1">
+                    <mxGeometry x="780" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="基础工具" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1110" y="310" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="项目规范" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1110" y="375" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="其他" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="1110" y="450" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="列表页组件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#040101;" vertex="1" parent="1">
+                    <mxGeometry x="780" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="输入框组件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#040101;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="消息展示组件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#040101;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="240" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="聊天工具组件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#040101;" vertex="1" parent="1">
+                    <mxGeometry x="780" y="430" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="适配逻辑" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#040101;" vertex="1" parent="1">
+                    <mxGeometry x="925" y="430" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="Next + React&amp;nbsp; + React-bootstrap + React-redux + Stream-chat......." style="rounded=0;whiteSpace=wrap;html=1;fontSize=19;fontColor=#ffffff;fillColor=#0050ef;strokeColor=#001DBC;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="601" y="110" width="640" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
