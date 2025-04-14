@@ -1,50 +1,16 @@
-const bt = {
-    val:1,
-    left:{
-        val:2,
-        left:{
-            val:4,
-            left:null,
-            right:null
-        },
-        right:{
-            val:5,
-            left:null,
-            right:null
-        }
-    },
-    right:{
-        val:3,
-        left:{
-            val:6,
-            left:null,
-            right:null
-        },
-        right:{
-            val:7,
-            left:null,
-            right:null
-        }
-    }
-}
+// function add(num1, num2) {
+//     // 使用更精确的小数位数计算方法
+//     const getPrecision = num => {
+//         const str = num.toString().toLowerCase();
+//         const decimalIndex = str.indexOf('.');
+//         console.log(str, decimalIndex,str.split('e')[0])
+//         return decimalIndex === -1 ? 0 : str.split('e')[0].length - decimalIndex - 1;
+//     };
 
-// 递归版本实现
-const postOrder1 = (root) => {
-    if(!root){
-        return;
-    }
-    postOrder1(root.left);
-    postOrder1(root.right);
-    console.log(root.val);
-}
+//     const maxPrecision = Math.max(getPrecision(num1), getPrecision(num2));
+//     const baseNum = 10 ** maxPrecision; // 改用ES6指数运算符
 
-postOrder1(bt);
-/**打印结果：
-1
-2
-4
-5
-3
-6
-7
-*/
+//     return (Math.round(num1 * baseNum) + Math.round(num2 * baseNum)) / baseNum;
+// }
+// add(0.1, 0.2)
+

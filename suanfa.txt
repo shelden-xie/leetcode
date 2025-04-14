@@ -1,0 +1,14 @@
+const treeMaxDepth = (root) => {
+    if(!root) return 0;
+    let deep = 0;
+    let queue = [root];
+    while(queue.length){
+        for(var i = 0; i<=queue.length-1;i++){
+            if(queue[i].left) queue.push(queue[i].left);
+            if(queue[i].right) queue.push(queue[i].right);
+            queue.shift();
+        }
+        deep++;
+    }
+    return deep;
+}

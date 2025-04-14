@@ -81,35 +81,54 @@ const treeTArray = (arr, index = 0) => {
 const tree = treeTArray(arr, 0);
 
 console.log(tree);
-// dfs 深度优先遍历，递归法，边界是root不存在，如果遍历左子树，就沿着左子树一直遍历下去，右子树同理，
-// 直到递归边界终止开始向上输出，所以就是：Math.max(left,right) + 1，
-//图片：https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f74a34060c234cd3a5e23f6a8ff890c1~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp
-var maxDepth = function (root) {
-  if (!root) {
-    return 0;
-  } else {
-    let left = maxDepth(root.left);
-    let right = maxDepth(root.right);
-    return Math.max(left, right) + 1;
-  }
-};
+// // dfs 深度优先遍历，递归法，边界是root不存在，如果遍历左子树，就沿着左子树一直遍历下去，右子树同理，
+// // 直到递归边界终止开始向上输出，所以就是：Math.max(left,right) + 1，
+// //图片：https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f74a34060c234cd3a5e23f6a8ff890c1~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp
+// var maxDepth = function (root) {
+//   if (!root) {
+//     return 0;
+//   } else {
+//     let left = maxDepth(root.left);
+//     let right = maxDepth(root.right);
+//     return Math.max(left, right) + 1;
+//   }
+// };
 
-// bfs层序遍历，利用出栈和进栈
-const maxDepth2 =  (root)=> {
-  if (root == null) return 0;
-  const queue = [root];
-  let deep = 1;
-  while (queue.length) {
-    const len = queue.length;
-    for (let i = 0; i < len; i++) {
-      const cur = queue.shift();
-      if (cur.left) queue.push(cur.left);
-      if (cur.right) queue.push(cur.right);
-    }
-    if (queue.length) deep+=1;
+// // bfs层序遍历，利用出栈和进栈
+// const maxDepth2 =  (root)=> {
+//   if (root == null) return 0;
+//   const queue = [root];
+//   let deep = 1;
+//   while (queue.length) {
+//     const len = queue.length;
+//     for (let i = 0; i < len; i++) {
+//       const cur = queue.shift();
+//       if (cur.left) queue.push(cur.left);
+//       if (cur.right) queue.push(cur.right);
+//     }
+//     if (queue.length) deep+=1;
+//   }
+//   return deep;
+// };
+
+// console.log(maxDepth2(tree));
+// // @lc code=end
+
+
+
+const treeMaxDepth = (root) => {
+  if(!root) return 0;
+  let deep = 0;
+  let queue = [root];
+  while(queue.length){
+      for(var i = 0; i<=queue.length-1;i++){
+          if(queue[i].left) queue.push(queue[i].left);
+          if(queue[i].right) queue.push(queue[i].right);
+          queue.shift();
+      }
+      deep++;
   }
   return deep;
-};
+}
 
-console.log(maxDepth2(tree));
-// @lc code=end
+console.log(treeMaxDepth(tree))
