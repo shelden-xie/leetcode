@@ -100,12 +100,11 @@ let preorderTraversal = (root, arr = []) => {
       res.push(current.val);
       stack.push(current);
       current = current.left;
-      console.log(stack,11111)
     }
     current = stack.pop();
-    console.log(stack,'122121')
     current = current.right;
   }
+  console.log(res)
   return res;
 };
 
@@ -114,3 +113,34 @@ preorderTraversal(obj,[])
 
 // };
 // @lc code=end
+
+
+// 后续遍历
+// ... 前序和中序遍历代码保持不变 ...
+
+// 后序遍历非递归实现（使用标记法）
+let postorderTraversal = (root) => {
+  const stack = [], res = [];
+  let current = root;
+  let lastVisited = null; // 记录上次访问的节点
+  
+  while (current || stack.length) {
+    while (current) {
+      stack.push(current);
+      current = current.left; // 先遍历左子树
+    }
+    current = stack[stack.length - 1]; // 查看栈顶元素但不弹出
+    if (!current.right || current.right === lastVisited) {
+      // 如果没有右子树或右子树已访问过
+      res.push(current.val); // 访问节点值
+      lastVisited = stack.pop(); // 记录最后访问的节点
+      current = null; // 当前节点置空
+    } else {
+      current = current.right; // 否则遍历右子树
+    }
+  }
+  return res;
+};
+
+// 测试后序遍历
+postorderTraversal(obj)

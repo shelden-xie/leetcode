@@ -1,0 +1,28 @@
+1、React基本概念
+-函数式组件
+-函数式编程思想
+-hooks
+
+2、进阶概念
+-suspense
+-Concurrent Mode
+-memo、useCallback
+-hydrate
+
+3、原理
+-结合实际开发
+-为什么选择函数式组件而不是类组件
+-为什么要拥抱函数式编程思想
+-为什么要设计hooks、自定义hooks
+-Suspense的设计原理以及使用
+-Concurrent Mode和非Concurrent Mode的对比
+-前后端同构、SSR、hydrate、renderToString
+
+4、源码
+-Firber
+-两大工作循环
+ --reconcile、调和
+ --commitRoot
+-数据结构
+-双缓存机制
+-react->react reconciler->react-dom
