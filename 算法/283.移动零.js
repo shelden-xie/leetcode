@@ -83,9 +83,10 @@ var moveZeroes1 = function(nums) {
            nums[i] = nums[j];
            nums[j++] = emp
         }
+        console.log(nums,i,j)
     }
-    console.log(nums)
 };
+
 
 moveZeroes([1,0,1,0,3,12,0])
 // @lc code=end
