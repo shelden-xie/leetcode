@@ -1,7 +1,12 @@
 const moveZero = (arr )=>{
  if(!arr.length || arr.length === 1) return arr;
- let zeroArr = []
+ let j = 0;
  for(var i = 0;i<=arr.length-1;i++){
-    
+    let element = arr[i];
+    if(element!==0){
+        let tem = element;
+        arr[i+1] = element
+        arr[j++] = tem
+    }
  }
 }
