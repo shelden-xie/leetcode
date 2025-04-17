@@ -24,11 +24,39 @@
 - 所有节点的值都是唯一的。
 - p、q 为不同节点且均存在于给定的二叉树中。
  */
-import { treeTArray } from "./普通数组转化二叉树.js";
-const tree = treeTArray(null,0);
-const p = 5;
-const q = 1;
 
+class TreeNode {
+    constructor(value) {
+        this.val = value;
+        this.left = null;
+        this.right = null;
+    }
+}
+const treeTArray = (arr,index=0)=>{
+    if(!arr[index] ||index > arr.length-1) return null;
+    const tree= new TreeNode(arr[index]); 
+    tree.left = treeTArray(arr,index*2 + 1)
+    tree.right = treeTArray(arr,index*2 + 2)
+    return tree
+}
+
+// 通过层级遍历获取实际节点引用
+function findNode(root, val) {
+    if (!root) return null;
+    const queue = [root];
+    while (queue.length) {
+        const node = queue.shift();
+        if (node.val === val) return node;
+        if (node.left) queue.push(node.left);
+        if (node.right) queue.push(node.right);
+    }
+    return null;
+}
+
+const tree = treeTArray([3,5,1,6,2,0,8,null,null,7,4],0)
+
+const p = findNode(tree, 5);
+const q = findNode(tree, 1);
 const lowestCommonAncestor = function (root, p, q) {
     if(!root || root === p || root === q) return root;
     const left = lowestCommonAncestor(root.left, p, q);
@@ -37,3 +65,4 @@ const lowestCommonAncestor = function (root, p, q) {
     return left || right;
 }
 
+console.log(lowestCommonAncestor(tree, p, q))
