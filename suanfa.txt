@@ -1,12 +1,27 @@
-const moveZero = (arr )=>{
- if(!arr.length || arr.length === 1) return arr;
- let j = 0;
- for(var i = 0;i<=arr.length-1;i++){
-    let element = arr[i];
-    if(element!==0){
-        let tem = element;
-        arr[i+1] = element
-        arr[j++] = tem
-    }
- }
+
+const arr =[
+    {id: 2, title:'部门2', pid: 1},
+    {id: 3, title:'部门3', pid: 1},
+    {id: 1, title:'部门1', pid: 0},
+    {id: 4, title:'部门4', pid: 3},
+    {id: 5, title: '部门5', pid: 4},
+]
+
+const arrayToTree = (arr) => {
+    if(!arr) return {}
+    let map = {}
+    let result = []
+    arr.forEach(item=>{
+        const node = {...item,children:[]}
+        map[item.id] = node
+        if(item.pid ===0){
+            result.push(node);
+        }else{
+            if(map[item.pid]){
+                map[item.pid].children.push(node)
+            }else{
+                map[item.pid].children = [node]
+            }
+        }
+    })
 }

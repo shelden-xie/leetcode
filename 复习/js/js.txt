@@ -1,0 +1,2 @@
+1、JSONP 只能发送 GET 请求，无法发送 POST 请求，也无法使用 HTTP 请求头和请求体传递数据。
+symbol 唯一性，不可改变、安全性   可以通过Object.getOwnPropertySymbols()来获取
