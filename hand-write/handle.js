@@ -132,5 +132,6 @@ const myNew = function () {
   var str = '20230130';
   var arr = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
   str = str.replace(/\d/g, function (a, b, c) {
+    console.log(a,b,c,arguments[0]);
       return arr[Number(arguments[0])]
   })

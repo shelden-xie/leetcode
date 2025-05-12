@@ -1,0 +1,19 @@
+React Fiber lane模型等底层实现(ok)
+Ra9是什么?GraphRag是什么?(Ok)
+koa 或 nextjs 写一个参数聚合接口(ok)
+service worker介绍(不了解)
+Webpack、Vite不同(ok)
+伕2E测试介绍(主要是对开源cypress能力的api封装，ok)
+微前端(不了解)
+
+编码一: [{key:"x",value:2,children:[{key:"x",value:4},{key:"x",value:4}]},{key:"x",value:2),{key:"x",value:3}]对象数组去重实现，要求
+低复杂度实现。(ok)
+编码二:输入:nums=[1,2,3]全排列(ok)
+编码三:根据pid，将数组处理成以下 tree结构(ok)
+const arr=[{id: 2.title:'部门2'pid: 1},
+{id: 3, title:'部门3, pid: 1},
+{id: 1, title:'部门1, pid: 0},
+{id: 4, title:'部门 4' pid: 3},
+{id: 5, title: '部门 5' pid: 4}]
+
+

@@ -14,17 +14,38 @@
 // }
 // add(0.1, 0.2)
 
-
 // demo03
 var a = 20;
 var obj = {
-    a: 10,
-    c: this.a + 20,
-    fn: function () {
-        return this.a;
-    }
-}
+  a: 10,
+  c: this.a + 20,
+  fn: function () {
+    return this.a;
+  },
+};
 
 console.log(obj.c); // 这里的this指向window是因为对象字面量中的this在定义时就已经确定了，它指向全局对象（浏览器中是window）。对象字面量中的属性值计算是在创建对象时进行的，此时this还不指向obj本身。
 console.log(obj.fn()); // 这里this指向obj是因为fn是作为obj的方法被调用的，方法中的this指向调用它的对象
 
+
+const arr = [1,2,3];
+
+var permute = function (nums) {
+    const result = [];
+    const backtrack = (start) => {
+        if (start === nums.length) {
+            result.push([...nums]);
+            return;
+        }
+        for (let i = start; i < nums.length; i++) {
+            [nums[start], nums[i]] = [nums[i], nums[start]]; // 交换
+            backtrack(start + 1); // 递归
+            [nums[start], nums[i]] = [nums[i], nums[start]]; // 撤销交换
+            console.log(start,i,nums,22222)
+        }
+    };
+    backtrack(0);
+    return result;
+};
+
+permute(arr)

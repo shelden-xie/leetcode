@@ -13,3 +13,8 @@ requestfullscreen() 全屏
 
 
 geolocation检验是否支持获取地理位置，navigator.geolocation.getCurrentPosition(callback)获取地理位置信息
+
+react19新特性
+-useTransition 处理过渡状态
+-useOptimistic 乐观更新：
+-useActionState 处理表单提交是的加载状态，以及错误状态处理
